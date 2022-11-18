@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Your Homework Reminder</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+
+               <!-- MOBILE WEB APP, ADD THIS TO <head>..</head> OF index.html -->
+       <link rel="icon" type="image/png" href="favicon.png" />
+       <link rel="apple-touch-icon" href="favicon.png">
+       <meta name="apple-mobile-web-app-title" content="Your Homework Reminder">
+       <meta name="apple-mobile-web-app-capable" content="yes">
+       <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <textarea placeholder="What are your assignments today?" id="note" onkeyup="autoSave()"></textarea>
+        <script src="scripts.js" async defer></script>
+
+        <div id="clock"></div>
+
+        <!-- PANEL 1 -->
+        <div class="panel" id="panel-1">            
+            <h1>Monday</h1>
+        </div>
+    
+        <!-- PANEL 2 -->
+        <div class="panel" id="panel-2">
+            <h1>Tuesday</h1>
+        </div>
+
+        <!-- PANEL 3 -->
+        <div class="panel" id="panel-3">
+            <h1>Wednesday</h1>
+        </div>
+
+        <!-- PANEL 4 -->
+        <div class="panel" id="panel-4">
+            <h1>Thursday</h1>
+        </div>
+
+         <!-- PANEL 5 -->
+         <div class="panel" id="panel-5">
+            <h1>Friday</h1>
+        </div>
+
+        
+
+        <!-- NAVIGATION -->
+        <nav class="navbar">
+            <button onclick="hide(); showPanel1();">Monday</button>
+            <button onclick="hide(); showPanel2();">Tuesday</button>
+            <button onclick="hide(); showPanel3();">Wednesday</button>
+            <button onclick="hide(); showPanel4();">Thursday</button>
+            <button onclick="hide(); showPanel5();">Friday</button>
+        </nav>
+
+    </body>
+</html>
+    </body>
+</html>
