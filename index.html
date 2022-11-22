@@ -26,34 +26,39 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <textarea placeholder="What are your assignments today?" id="note" onkeyup="autoSave()"></textarea>
-        <script src="scripts.js" async defer></script>
+        
+     
 
         <div id="clock"></div>
 
         <!-- PANEL 1 -->
         <div class="panel" id="panel-1">            
             <h1>Monday</h1>
+            <textarea placeholder="Monday..." class="post-it" id="monday" onkeyup="saveMonday()"></textarea>
         </div>
     
         <!-- PANEL 2 -->
         <div class="panel" id="panel-2">
             <h1>Tuesday</h1>
+            <textarea placeholder="Tuesday..." class="post-it" id="tuesday" onkeyup="saveTuesday()"></textarea>
         </div>
 
         <!-- PANEL 3 -->
         <div class="panel" id="panel-3">
             <h1>Wednesday</h1>
+            <textarea placeholder="Wednesday..." class="post-it" id="wednesday" onkeyup="saveWednesday()"></textarea>
         </div>
 
         <!-- PANEL 4 -->
         <div class="panel" id="panel-4">
             <h1>Thursday</h1>
+            <textarea placeholder="Thursday..." class="post-it" id="thursday" onkeyup="saveThursday()"></textarea>
         </div>
 
          <!-- PANEL 5 -->
          <div class="panel" id="panel-5">
             <h1>Friday</h1>
+            <textarea placeholder="Friday..." class="post-it" id="friday" onkeyup="saveFriday()"></textarea>
         </div>
 
         
@@ -66,6 +71,8 @@
             <button onclick="hide(); showPanel4();">Thursday</button>
             <button onclick="hide(); showPanel5();">Friday</button>
         </nav>
+
+        <script src="scripts.js" async defer></script>
 
     </body>
 </html>
